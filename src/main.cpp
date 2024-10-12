@@ -1,5 +1,6 @@
 #include <raylib.h>
 #include "grid.h"
+#include "blocks.cpp"
 
 #define WINW 300
 #define WINH 600
@@ -17,11 +18,14 @@ int main()
   // grid.grid[0][0] = 1;
   grid.Print();
 
+  LBlock block = LBlock();
+
   while (!WindowShouldClose())
   {
     BeginDrawing();
     ClearBackground(darkBlue);
     grid.Draw();
+    block.Draw();
     EndDrawing();
   }
 

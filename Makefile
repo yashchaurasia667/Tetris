@@ -1,6 +1,6 @@
 CFLAGS = -Wall -Wextra
 LIBS = -lraylib
-DEPENDENCIES = src/grid.cpp
+DEPENDENCIES = src/grid.cpp src/colors.cpp src/block.cpp src/position.cpp
 
 default: tetris
 
